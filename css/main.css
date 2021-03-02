@@ -1,0 +1,256 @@
+/*------------CSS RESET-----------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*------------CSS RESET END-----------*/
+
+/* ------------BASE STYLE------------ */
+
+body {
+  min-height: 100vh;
+  background: #cfe7fa; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #cfe7fa 0%,
+    #6393c1 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #cfe7fa 0%,
+    #6393c1 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #cfe7fa 0%,
+    #6393c1 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.wrapper {
+  display: block;
+  width: 1120px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------HEADER STYLE------------ */
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-bar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-bar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.navigation-bar ul li a {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #00008b;
+  transition: all 0.5s;
+}
+
+.navigation-bar ul li a:hover {
+  opacity: 0.5;
+  font-size: 27px;
+}
+/* ------------MAIN STYLE-------------- */
+
+.home-section {
+  width: 100%;
+  height: 100vh;
+  padding-top: 30px;
+  background-image: url("../images/cup-of-coffee-1280537_1920.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.home-section h1 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin-top: 30px;
+  color: black;
+  background: #cfe7fa;
+}
+
+.home-section h1 span {
+  font-weight: 900;
+  color: #00008b;
+}
+
+.about-section {
+  width: 90%;
+  height: 100vh;
+  padding-top: 30px;
+}
+
+.about-section h3 {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about-section h3 span {
+  color: #00008b;
+  font-weight: 900;
+}
+
+.work-section {
+  width: 90%;
+  height: 100vh;
+}
+
+.contact-section {
+  width: 90%;
+  height: 10vh;
+}
+
+/* ------------FOOTER STYLE-------------- */
