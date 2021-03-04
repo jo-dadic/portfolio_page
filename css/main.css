@@ -169,20 +169,24 @@ a {
 
 /* ------------HEADER STYLE------------ */
 header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navigation-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
 }
 
 .navigation-bar ul {
-  padding: 0;
+  /* position: fixed;
+  top: 0; */
+  width: 1120px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   margin: 0;
+  background-color: #cfe7fa;
 }
 
 .navigation-bar ul li {
