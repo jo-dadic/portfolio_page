@@ -152,8 +152,7 @@ body {
   margin: 0 auto;
 }
 
-.page-header .wrapper,
-.page-footer .wrapper {
+.page-header .wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -302,6 +301,11 @@ main .wrapper {
 .box h5 {
   color: #00008b;
   font-weight: 600;
+  font-size: 1.4em;
+}
+
+.box p {
+  font-size: 1.2em;
 }
 
 .box a {
@@ -313,3 +317,52 @@ main .wrapper {
 }
 
 /* ---------------------Footer------------------------ */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer h3 {
+  color: #00008b;
+  font-size: 2em;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-footer h3 span {
+  font-size: 0.5em;
+  font-weight: 500;
+}
+
+.page-footer p a {
+  color: black;
+  font-size: 1.2em;
+}
+
+.page-footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer ul li {
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.page-footer ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.page-footer ul li a:hover {
+  opacity: 0.5;
+  font-size: 1.5em;
+}
+
+.page-footer ul li i {
+  padding-right: 5px;
+  color: #00008b;
+}
