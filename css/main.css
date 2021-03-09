@@ -129,7 +129,7 @@ table {
 
 body {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: #cfe7fa; /* Old browsers */
   background: -moz-linear-gradient(
     top,
@@ -258,14 +258,19 @@ header {
   padding-bottom: 50px;
 }
 
-.about-container {
+/* .about-container {
   justify-content: space-evenly;
-}
+} */
 
 .about-container h5 {
   color: #00008b;
   font-weight: 700;
   padding-bottom: 10px;
+}
+
+.bio span {
+  color: #00008b;
+  font-weight: 550;
 }
 
 .education ul li i {
@@ -332,7 +337,6 @@ header {
 .contact-section {
   width: 90%;
   height: 10vh;
-  padding-top: ;
 }
 
 .page-footer h3 {
@@ -377,7 +381,6 @@ header {
 
 @media (max-width: 1200px) {
   .wrapper {
-    display: block;
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
