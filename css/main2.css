@@ -131,6 +131,12 @@ body {
   font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
     monospace;
   line-height: 30px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 /* ---------------------Header------------------------ */
@@ -140,16 +146,12 @@ body {
   min-height: 67px;
   width: 100%;
   background-color: #6393c1;
+  margin: 0 auto;
 }
 
 .page-header {
   display: flex;
   align-items: center;
-}
-
-.wrapper {
-  width: 1170px;
-  margin: 0 auto;
 }
 
 .page-header .wrapper {
@@ -206,7 +208,7 @@ main .wrapper {
 
 .about-section {
   width: 100%;
-  height: 80vh;
+  /* height: 70vh; */
   padding-top: 30px;
 }
 
@@ -218,10 +220,6 @@ main .wrapper {
   padding-bottom: 10px;
 }
 
-.about-container {
-  display: flex;
-}
-
 .about-container h5 {
   color: #00008b;
   font-weight: 600;
@@ -229,16 +227,20 @@ main .wrapper {
   font-size: 1.2em;
 }
 
-.bio,
-.education,
-.tools {
+.about-container {
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.bio {
   text-align: justify;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .bio span {
   color: #00008b;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .bio p {
@@ -247,22 +249,30 @@ main .wrapper {
 
 .education {
   width: 50%;
-  margin-right: 5px;
+  /* margin-right: 40px; */
   font-size: 1.3em;
 }
 
+.education ul {
+  padding-left: 20px;
+}
+
 .tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
-  margin-left: 60px;
   font-size: 1.3em;
-  position: relative;
-  left: 200px;
+}
+
+.tools h5 {
+  align-self: flex-start;
+  padding-left: 100px;
 }
 
 .tools ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   padding-top: 10px;
   width: 55%;
@@ -277,7 +287,8 @@ main .wrapper {
 }
 
 .work-section {
-  height: 80vh;
+  /* height: 60vh; */
+  padding-top: 40px;
 }
 
 .work-container {
@@ -290,7 +301,6 @@ main .wrapper {
   flex-direction: column;
   width: calc(50% - 15px);
   margin-right: 15px;
-
   border-radius: 5px;
   padding: 5px;
   margin: 10px;
@@ -335,6 +345,10 @@ main .wrapper {
   font-weight: 500;
 }
 
+.page-footer p {
+  padding-bottom: 10px;
+}
+
 .page-footer p a {
   color: black;
   font-size: 1.2em;
@@ -365,4 +379,82 @@ main .wrapper {
 .page-footer ul li i {
   padding-right: 5px;
   color: #00008b;
+}
+
+/* ------------------Media queries------------------- */
+
+/* 1200px */
+@media (max-width: 73.125em) {
+  .wrapper {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .home-section h1 {
+    font-size: 2em;
+  }
+
+  .work-section {
+    width: 100%;
+  }
+
+  .work-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  .box {
+    width: 30%;
+  }
+
+  .page-footer ul li {
+    justify-content: flex-start;
+    padding-right: 5px;
+  }
+
+  .socials span {
+    display: none;
+  }
+}
+
+/* 578px */
+@media (max-width: 36.125em) {
+  .navigation-bar {
+    visibility: hidden;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+
+  .education {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .tools {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .tools h5 {
+    padding-left: 0px;
+  }
+
+  .tools ul {
+    padding-left: 30px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .page-footer h3 span {
+    display: none;
+  }
+
+  .page-footer ul li {
+    font-size: 2em;
+  }
 }
