@@ -174,6 +174,21 @@ nav ul {
   margin: 0 5px 5px 0;
 }
 
+.nav-toggle {
+  width: 50px;
+  background: none;
+  border: none;
+  display: none;
+}
+.toggle-line {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #00008b;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+
 /* ---------------------Main-------------------------- */
 
 main .wrapper {
@@ -187,6 +202,7 @@ main .wrapper {
   padding-top: 30px;
   background-image: url("../images/cup-of-coffee-1280537_1920.jpg");
   background-size: cover;
+  background-position: center;
   opacity: 0.8;
 }
 
@@ -289,6 +305,7 @@ main .wrapper {
 .work-section {
   /* height: 60vh; */
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .work-container {
@@ -406,7 +423,7 @@ main .wrapper {
   }
 
   .box {
-    width: 30%;
+    width: 40%;
   }
 
   .page-footer ul li {
@@ -414,16 +431,62 @@ main .wrapper {
     padding-right: 5px;
   }
 
-  .socials span {
+  .page-footer h3 span {
     display: none;
+  }
+
+  .page-footer ul li {
+    font-size: 1.7em;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 /* 578px */
 @media (max-width: 36.125em) {
-  .navigation-bar {
-    visibility: hidden;
+  .page-header {
+    position: relative;
   }
+
+  .open::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #6393c1;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+  }
+
+  .navigation-bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 11;
+  }
+
+  .open .navigation-bar {
+    display: block;
+  }
+
+  .navigation-bar ul {
+    flex-direction: column;
+  }
+
+  .navigation-bar ul li {
+    margin: 15px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: relative;
+    float: left;
+  }
+
   .about-container {
     flex-direction: column;
   }
@@ -450,11 +513,7 @@ main .wrapper {
     width: 100%;
   }
 
-  .page-footer h3 span {
+  .socials span {
     display: none;
-  }
-
-  .page-footer ul li {
-    font-size: 2em;
   }
 }
