@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jo-dadic/portfolio_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jo-dadic/portfolio_page/issues"
+  },
+  "homepage": "https://github.com/jo-dadic/portfolio_page#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
