@@ -271,6 +271,7 @@ main .wrapper {
 
 .bio p span a {
   text-decoration: none;
+  color: #6856f0;
 }
 
 .education {
@@ -281,6 +282,10 @@ main .wrapper {
 
 .education ul {
   padding-left: 20px;
+}
+
+.education ul li a {
+  color: #6856f0;
 }
 
 .tools {
