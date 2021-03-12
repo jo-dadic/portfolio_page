@@ -307,8 +307,9 @@ main .wrapper {
 .tools ul li {
   font-size: 1.3em;
   padding-bottom: 10px;
-  padding-right: 15px;
+  padding-right: 20px;
 }
+
 .tools ul li i {
   color: #f1b24b;
 }
