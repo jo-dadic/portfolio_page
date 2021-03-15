@@ -386,6 +386,14 @@ main .wrapper {
   opacity: 0.5;
 }
 
+.box .unavailable:hover {
+  cursor: not-allowed;
+}
+
+.box .not {
+  font-size: 0.9em;
+}
+
 /* ---------------------Footer------------------------ */
 .contact-section {
   display: flex;
