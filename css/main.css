@@ -175,6 +175,10 @@ nav ul {
   margin: 0 5px 5px 0;
 }
 
+.page-header nav a:hover {
+  opacity: 0.5;
+}
+
 .nav-toggle {
   width: 50px;
   background: none;
@@ -265,10 +269,20 @@ main .wrapper {
   font-size: 1.3em;
 }
 
-.bio p a {
+.cv {
+  margin-top: 15px;
+}
+
+.bio .cv a {
   text-decoration: none;
   color: #000;
-  /* color: #6856f0; */
+  border: 1px solid #cc4233;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.bio .cv a:hover {
+  color: #cc4233;
 }
 
 .education {
@@ -286,6 +300,10 @@ main .wrapper {
   text-decoration: underline;
 }
 
+.education ul li a:hover {
+  color: #cc4233;
+}
+
 .tools {
   display: flex;
   flex-direction: column;
@@ -301,7 +319,7 @@ main .wrapper {
 
 .tools ul {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 10px;
   width: 55%;
@@ -398,6 +416,10 @@ main .wrapper {
   text-decoration: none;
 }
 
+.page-footer p a:hover {
+  color: #cc4233;
+}
+
 .page-footer ul {
   display: flex;
   justify-content: space-between;
@@ -412,11 +434,10 @@ main .wrapper {
 .page-footer ul li a {
   color: black;
   text-decoration: none;
-  transition: all 0.5s;
 }
 
 .page-footer ul li a:hover {
-  opacity: 0.5;
+  color: #cc4233;
 }
 
 .page-footer ul li i {
@@ -532,7 +553,6 @@ main .wrapper {
 
   .tools {
     width: 100%;
-    align-items: flex-start;
   }
 
   .tools h5 {
@@ -541,6 +561,7 @@ main .wrapper {
 
   .tools ul {
     padding-left: 30px;
+    align-items: flex-start;
   }
 
   .box {
