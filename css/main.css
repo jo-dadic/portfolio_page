@@ -314,7 +314,7 @@ main .wrapper {
 
 .tools h5 {
   align-self: flex-start;
-  padding-left: 200px;
+  padding-left: 230px;
 }
 
 .tools ul {
@@ -387,12 +387,17 @@ main .wrapper {
   opacity: 0.5;
 }
 
-.box .unavailable:hover {
+/* .box .unavailable:hover {
   cursor: not-allowed;
 }
 
 .box .not {
   font-size: 0.9em;
+} */
+
+.box .working {
+  font-size: 0.9em;
+  color: red;
 }
 
 /* ---------------------Footer------------------------ */
